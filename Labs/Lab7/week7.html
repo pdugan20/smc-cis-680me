@@ -1,0 +1,240 @@
+######################################### media_query.html #########################################
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Week 7 Lab</title>
+  
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Low-level HTML5 Template">
+    
+    <link rel="shortcut icon" href="images/htmlbadge.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query.css">
+  </head>
+  
+  <body> 
+  <header>
+    <hgroup>
+      <h1>Week 7 Lab</h1>
+    </hgroup>
+  </header>
+  
+  <section>
+  <article>
+    <h2>A Neat Blockquote Example!</h2>
+      <h3>Lines that aren't block-quoted are not indented</h3>
+    <h3>They are also not italicized, and they don't have quotes automatically placed around them</h3>
+  </article>
+  
+    <article>
+      <h2>Bam! Styling applied to the p tag!</h2>
+      <h3>This line shows up in both bold and italics. Wow. That certainly is pretty neat.</h3>
+    </article>
+    <article>
+      <h2>Another Interesting Article!</h2>
+      <h3></h3>
+      <h3>This time I didn't forget to add some sentences to the article</h3>
+      <h3>In fact, I'll even prove that my sections are sub-numbered.</h3>
+    </article>     
+  </section>
+
+  <footer>
+    <small>&#169; Patrick Dugan <time datetime="2011-08-28">2011</time></small>
+      <figure>
+      <img src="images/HTML5.png" alt="">
+    </figure>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  </body>
+</html>
+
+######################################### media_query.css #########################################
+
+body { 
+	font: .9em Georgia, "Times New Roman", Sans-Serif; 
+	background:url(../images/bg.gif) repeat-x; 
+	color: #333; 
+	margin: 0 auto; 
+	width: 900px;
+}
+a { 
+	color: #A82A15; 
+	text-decoration: none; 
+}
+img { 
+	border: 0; 
+}
+h1 {  
+	float: left; 
+	margin: 35px; 
+	font-size: 3em; 
+	color: #fff; 
+}
+body h2 { 
+	color: #F31515;
+	font-size: 2em; 
+	font-weight: normal; 
+	margin: 10px 0 10px; 
+}
+body h3 { 
+	font-size: 1em; 
+	font-weight: normal;
+}
+body article {
+	float: left; 
+	width: 100%; 
+	margin: 0px 25px 25px;
+}
+footer { 
+	clear: both; 
+	padding: 15px; 
+	border-top: 1px solid #ccc;
+	text-align: center;
+
+}
+figure {
+	border-style:solid;
+	border-color:#fff;
+	border-width:10px;
+	clear: both;
+ 	margin-left: 10%;
+	margin-right: 10%;
+ 	text-align:center;
+}
+article aside {
+	font-style:italic;
+	padding:10px;
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    body {
+        font: .9em Georgia, "Times New Roman", Sans-Serif;
+        width: 100%;
+        background: url(../images/bg_mobile.gif) repeat-x;
+        margin:0 auto;
+    }
+    article {
+        float: none;
+        width: auto;
+    }
+    h1 {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    body h2 {
+        font-size: 14px;
+        color: #000000;
+        font-weight: bold;
+    }
+    body h3 {
+        font-size: 12px;
+        color: #000000;
+    }
+    footer { 
+	    text-align: left;
+	}
+    figure {
+	float: none;
+ 	text-align:left;
+ 	border-width:0px;
+ 	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 5px;
+    }
+}
+
+######################################### paged_media.html #########################################
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Paged Media</title>
+  
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Paged Media">
+    
+    <link rel="shortcut icon" href="images/htmlbadge.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/paged_media.css">
+  </head>
+  
+  <body> 
+    <div class="titlepage">
+      <div class="title">
+        This is the Book's Title
+      </div>
+    </div>
+    
+    <div class="toc">
+      <ul class="toc">
+        <li><a href="#chapter1">Chapter 1</a>
+        <li><a href="#chapter2">Chapter 2</a>
+      </ul>
+    </div>
+
+    <div class="chapter">Chapter 1</div>
+      <div class="chapter1">
+        <h1>Chapter1, Section 1</h1>
+        This would be a sentence in the books first chapter
+      </div>
+    </div>
+
+    <div class="chapter">Chapter 2</div>
+      <div class="chapter2">
+        <h1>Chapter2, Section 1</h1>
+        This would be a sentence in the books second chapter
+      </div>
+    </div>
+  
+</div>
+  </body>
+</html>
+
+######################################### paged_media.css #########################################
+
+@page {
+  size: 7in 9.25in;
+  margin: 27mm 16mm 27mm 16mm;
+  counter-increment: page;
+}
+div.chapter, div.appendix {
+  page-break-after: always;
+}
+div.titlepage {
+  page: blank;
+}
+@page :left {
+  @top-left {
+    content: "Cascading Style Sheets";
+  }
+}
+@page blank :left {
+  @top-left {
+    content: normal;
+  }
+}
+h1 {
+  string-set: header content();
+}
+@page :right {
+  @top-right {
+    content: string(header, first); 
+  }
+}
+@page :left {
+  @bottom-left {
+    content: counter(page);
+  }
+}
+@page front-matter :left {
+  @bottom-left {
+    content: counter(page, lower-roman);
+  }
+}
+ul.toc a::after {
+  content: leader('.') target-counter(attr(href), page);
+}

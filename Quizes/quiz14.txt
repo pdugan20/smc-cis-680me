@@ -1,0 +1,22 @@
+1. The cache manifest file can be divided into several sections. Which of the following are not valid category dividers?
+ANSWER:
+LOCATION, REQUIRED
+
+2. The cache manifest must be served with its own media type. The media type informs the web browser what kind of data it will be receiving from the web server, and handles the data accordingly. Which of the following, when added to a .htaccess file, would be valid cache manifest data types?
+
+Example AddType Syntax for use in .htaccess:
+AddType Mime-type Extension
+ANSWER:
+AddType text/cache-manifest manifest
+AddType text/cache-manifest cache
+AddType text/cache-manifest mfst
+AddType text/cache-manifest cached
+
+3. When we "serve" cache manifest files, we must configure the web server to do the right thing with the manifest files, which is to serve the file with the correct media type. Introducing HTML5 (p. 168)
+In this question, which of the following is the user-configurable files we can use to configure the web server?
+ANSWER:
+.htaccess
+
+4. Which attribute of the <html> element is required of all the HTML files listed in the cache manifest?
+ANSWER:
+manifest

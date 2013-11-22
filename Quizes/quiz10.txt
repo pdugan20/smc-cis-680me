@@ -1,0 +1,37 @@
+1. Which of the statements below is false?
+ANSWER:
+A Canvas element can be used to create Scalable Vector Graphics (SVG).
+
+2. Versions of IE prior to ver. 9 support the Canvas element.
+ANSWER:
+FALSE
+
+3. Assuming that we have the following Javascript,
+	var canvas = document.getElementById("b"); 
+	var context = canvas.getContext("2d"); 
+Which of the following Javascript snippets will draw a 500px by 500px rectangle at the x,y coordinates of 100,125 where id="b"?
+ANSWER:
+context.fillRect(100, 125, 500, 500);
+
+4. Assuming the we have the following code,
+	var canvas = document.getElementById("c"); 
+	var context = canvas.getContext("2d");
+context.moveTo(x, 0); 
+context.lineTo(x, 375);
+
+Which command do you invoke to actually print the line segment from x,0 to x,375?
+ANSWER:
+context.stroke();
+
+5. Given the code below, select the createLinearGradient statement that would the linear gradient below. (see Dive Into HTML5 for the answer).
+
+var d_canvas = document.getElementById("d"); 
+var context = d_canvas.getContext("2d");
+
+// Select the statement that goes here?
+
+context.fillStyle = my_gradient; 
+context.fillRect(0, 0, 300, 225); 
+ANSWER:
+var my_gradient = context.createLinearGradient(0, 0, 300, 0);
+

@@ -1,0 +1,20 @@
+1. Geolocation is officially part of HTML5, according the W3C.
+ANSWER:
+FALSE
+
+2. Which of the methods below is the Geolocation API function that will get the user's current location?
+ANSWER:
+getCurrentLocation()
+
+3. Browsers are designed so that users must always be asked to opt in to sharing their location. True or False.
+ANSWER:
+TRUE
+
+4. In the Geolocation API, a coords object is available if the user allows the browser to send location information. There are eight possible properties, but only three are guaranteed. What are they?
+ANSWER:
+coords.accuracy
+coords.longitude
+coords.latitude
+
+5.
+ANSWER:

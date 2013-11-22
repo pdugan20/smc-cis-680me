@@ -1,0 +1,26 @@
+1. IE6, 7, and 8 do not recognize HTML5's new elements without help. Which of the following Javascript libraries have we used to enable IE?
+ANSWER:
+modernizr.js, html5shiv.js  
+
+2. Which of the answers below show the correct format for CSS comments?
+ANSWER:
+/* comment */ 
+
+3. Which of the following CSS statements would put a 2-pixel grey border around only around paragraphs inside of the article elements of an HTML5 page, assuming that this CSS statement exists:
+div, p, article, nav, header, footer, aside { border:none }
+/* ?? what line goes here ?? */
+ANSWER:
+article p {border:solid 2px gray}
+
+4. Webfonts help your web pages look the same on browsers that know about which CSS3 rule do you need to apply? 
+ANSWER:
+@font-face
+
+5. It possible to have more than two background images by using CSS3 background-image property. 
+ANSWER:
+TRUE
+
+
+
+
+	

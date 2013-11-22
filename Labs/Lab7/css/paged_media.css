@@ -1,0 +1,41 @@
+h1 { 
+	color: #000000;
+	font-size: 2em; 
+	font-weight: normal; 
+	margin: 10px 0 10px;
+}
+h2 { 
+	color: #000000;
+	font-size: 1.5em; 
+	font-weight: normal; 
+	margin: 10px 0 20px;
+}
+h3 { 
+	color: #000000;
+	font-size: 1.3em; 
+	font-weight: bold; 
+	margin: 0px 0 0px;
+}
+p {
+	margin: 0;
+	padding: .8em 0
+}
+@page {
+    counter-increment: page;
+    size: 8.5in 11in portrait; 
+    margin: 27mm 16mm 27mm 16mm;
+    padding-top: .3in;
+    @top-center {
+     content: "Alice's Adventures in Wonderland";
+    }   
+}
+@page :left {
+    @top-left-corner {
+        content: counter(page);
+    }
+}
+@page :right {
+    @top-right-corner {
+        content: counter(page);
+    }
+}

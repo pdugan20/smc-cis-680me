@@ -1,0 +1,23 @@
+1. Assuming the your HTML5 form has an input field with an ID of 'email', which of the following JavaScript statements would put the cursor into the email input field when the page loads?
+ANSWER:
+document.getElementById("email").focus();
+
+2. In HTML5 forms, which attribute word do we use when we want our type=file input field to allow the user to select and upload more than one file?
+ANSWER:
+multiple
+
+3. Which of the attributes below would enable type=number input fields to increment or decrement a number by 5?
+ANSWER:
+step=5
+
+4. What is an HTML5 polyfill?
+ANSWER:
+Javascript or Flash/SIlverlight code that allows older browsers to handle HTML5 pages.
+
+5. We keep reading about JQuery. What is it?
+ANSWER:
+JQuery is a popular JavaScript library.
+
+
+
+	

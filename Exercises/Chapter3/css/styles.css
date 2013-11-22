@@ -1,0 +1,46 @@
+﻿body 
+    {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px auto;
+	max-width: 900px;
+	border-style: dashed;
+	border-width:2px;
+	border-color: #000000;
+    color: #000;
+    padding: 10px;
+    position: relative; 
+	top: 15px;
+	text-align: left;
+    }
+body h3 
+    { 
+	text-align: center;
+	color: #1955C3;
+    }
+body footer 
+    {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:small;
+	text-align: center;
+    }
+a 
+    { 
+    color: #A82A15; text-decoration: none; 
+    }
+a:hover 
+    { 
+    background: #A82A15; color: #fff; 
+    }
+input[type="search"] 
+    {
+    -webkit-appearance: textfield;
+    }
+input[type=range]::before 
+    {
+    content: attr(min);
+    } 
+input[type=range]::after 
+    {content: attr(max);
+    }

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<script> document.createElement(‘header’); document.createElement(‘nav’); document.createElement(‘article’); document.createElement(‘footer’); </script>
+<style>
+header, nav, footer, article {display:block;} 
+nav {
+  float:left; width:20%;
+} 
+article {
+  float:left; width:79%;
+} 
+footer {
+  clear:both;
+}
+header {
+  display:block; color:green; text-align:left;
+}
+article header {
+  color:blue;
+}
+article time {
+  color:orange;
+}
+article article {
+  float:left; text-indent:25px;
+}
+article figure {
+  border-style:dashed;
+  border-width:1px;
+  width:20%;
+}
+</style>
+<title>My Interesting Life</title>
+</head>
+<header>
+<hgroup> 
+<h1>Test Page</h1> 
+</hgroup>
+</header>
+
+<article> 
+<h1>Rules for Munchkins</h1>
+<section> 
+<h2>Yellow Brick Road</h2> 
+<p>It is vital that Dorothy follows it—so no selling ¬bricks as “souvenirs”</p>
+</section>
+<section> 
+<h2>Fan Club uniforms</h2>
+<p>All Munchkins are obliged to wear their “I’m a friend of Dorothy!” t-shirt when representing the club</p> 
+</section>
+<p><strong>Vital caveat about the information above: does not apply on the first Thursday of the month.</strong></p>
+</article>
+
+<article>
+<figure> 
+<img src=logo.jpg alt=""> 
+<!-- no alt, as it’s covered by the figcaption --> 
+<figcaption> Bruce and Remy welcome questions 
+<small>Photo &copy; Bruce’s mum</small>
+</figcaption> 
+</figure>
+<details> 
+<summary>Photograph details</summary> 
+Photograph taken on <time datetime=2009-12-25>Xmas Day 09</time> with a Canon Copyright Bruce Lawson,<address>bruce@brucelawson.co.uk</address>
+</details>
+</article>
+
+<footer>
+  <p><small>Copyright and other info here</small></p>
+</footer>
+</html>

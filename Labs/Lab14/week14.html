@@ -1,0 +1,126 @@
+##################################################
+File 1: work_offline.html
+##################################################
+
+<!doctype html>
+<html manifest="work_offline.manifest">
+  <head>
+    <title>Week 14 Lab: Offline Applications!</title>
+  
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Low-level HTML5 Template">
+    
+    <link rel="shortcut icon" href="images/htmlbadge.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/offline.css">
+
+    <script type="text/javascript" src="js/modernizr-2.0.6.js"></script>
+  </head>
+  
+  <body onload="initialize_map();initialize()"> 
+  <header>
+    <hgroup>
+      <h1>Week 14 Lab: Offline Applications</h1>
+    </hgroup>
+  </header>
+  
+  <section>
+
+  <article>
+    <h2>Work Offline!</h2>
+    Some generic information about using this web application offline would then appear here.
+  </article>
+
+  <article>
+    <h2>Some Useful Links</h2>
+    <a href="canvas.html">Link to Canvas.html</a>
+    <br><a href="also_work_offline.html">Link to Also_work_offline.html</a>
+  </article>
+  
+  </section>
+
+  <footer>
+    <small>&#169; Patrick Dugan <time datetime="2011-08-28">2011</time></small>
+      <figure>
+      <img src="images/HTML5.png" alt="">
+    </figure>
+  </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  </body>
+</html>
+
+##################################################
+File 2: also_work_offline.html
+##################################################
+
+<!doctype html>
+<html manifest="work_offline.manifest">
+  <head>
+    <title>Week 14 Lab: Offline Applications!</title>
+  
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Low-level HTML5 Template">
+    
+    <link rel="shortcut icon" href="images/htmlbadge.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/offline.css">
+
+    <script type="text/javascript" src="js/modernizr-2.0.6.js"></script>
+  </head>
+  
+  <body onload="initialize_map();initialize()"> 
+  <header>
+    <hgroup>
+      <h1>Week 14 Lab: Offline Applications</h1>
+    </hgroup>
+  </header>
+  
+  <section>
+
+  <article>
+    <h2>Also Work Offline!</h2>
+    Some generic information about using this web application offline would then appear here.
+  </article>
+  
+  </section>
+
+  <footer>
+    <small>&#169; Patrick Dugan <time datetime="2011-08-28">2011</time></small>
+      <figure>
+      <img src="images/HTML5.png" alt="">
+    </figure>
+  </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  </body>
+</html>
+
+##################################################
+File 3: work_offline.manifest
+##################################################
+CACHE MANIFEST
+# version_1.0
+
+# Explicitly cached entries
+work_offline.html
+canvas.html
+css/canvas.css
+css/offline.css
+css/html5reset.css
+
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+/ /also_work_offline.html
+
+# All other resources (e.g. sites) require the user to be online. 
+NETWORK:
+*
+
+# Additional resources to cache
+CACHE:
+images/bg.gif
+images/html5_background.jpg
+images/HTML5.png
+images/htmlbadge.ico

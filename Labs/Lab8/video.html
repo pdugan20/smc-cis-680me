@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Week 8 Lab</title>
+  
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Low-level HTML5 Template">
+    
+    <link rel="shortcut icon" href="images/htmlbadge.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+  </head>
+  
+  <body> 
+  <header>
+    <hgroup>
+      <h1>Week 8: HTML5 Video</h1>
+    </hgroup>
+  </header>
+  
+  <section>
+
+  <article>
+    <h2>HTML5 Audio Example!</h2>
+    <h3>This song defaults to a .mp3, and then falls-back upon a .ogg audio file.</h3>
+  </article>
+    <audio controls autoload>
+      <source src="media/song.mp3" type="audio/mpeg">
+      <source src="media/song.ogg" type="audio/mpeg">
+    </audio>
+  
+  <article>
+    <h2>Theora-OGV Video Example!</h2>
+    <h3>Check out the following video which uses the Theora codec!</h3>
+  </article>
+  <video controls preload="auto">
+    <source src="media/video.ogv" media="(min-device-width:800px)" type='video/ogg; codecs="theora, vorbis"' />
+    <source src="media/video-mobile.ogv" type='video/ogg; codecs="theora, vorbis"' />
+    <h3>Snap! Looks like you might not be able to view this video. Check out <a href="http://www.theora.org">this</a> page for more info.</h3>
+  </video>
+
+  <article>
+    <h2>WebM Video Example!</h2>
+    <h3>Check out the following video which is encoded via webM and works on most browsers!</h3>
+  </article>
+  <video controls preload=auto>
+    <source src=media/video.webm media="(min-device-width:800px)" type='video/webm; codecs="vp8, vorbis"'>
+    <source src=media/video-mobile.webm type='video/webm; codecs="vp8, vorbis"' />
+    <h3>Snap! Looks like you might not be able to view this video. Check out <a href="http://www.webmproject.org">this</a> page for more info.</h3>
+  </video>
+
+  <article>
+    <h2>MP4 Video Example!</h2>
+    <h3>Check out the following video which is encoded via mp4 and sadly doesn't work on as many browsers</h3>
+  </article>
+  <video controls preload=auto>
+    <source src=media/video.mp4 type="video/mp4" media="(min-device-width:800px)">
+    <source src=media/video-mobile.mp4 type="video/mp4">
+    <h3>Snap! Looks like you might not be able to view this video. Check out <a href="http://www.mp4ra.org">this</a> page for more info.</h3>
+  </video>
+  
+  <article>
+    <h2>Multi-Format/Browser Video Example!</h2>
+    <h3>Check out the following video, which uses fallbacks, and should be viewable on leagcy browsers too!</h3>
+  </article> 
+    <video controls preload=auto>
+      <source src=media/video.webm type='video/webm; codecs="vp8, vorbis"' />
+      <source src=media/video.ogv type='video/ogg; codecs="theora, vorbis"' />
+      <source src=media/video.mp4 type="video/mp4">
+      
+      <object width="560" height="320" type="application/x-shockwave-flash" data="flowplayer-3.2.7.swf" id="flashfallback"> 
+        <param name="player" value="flowplayer-3.2.7.swf" /> 
+        <param name="allowfullscreen" value="true" /> 
+        <param name="flashvars" value='config={"clip": {"url": "media/video.mp4", "autoPlay":false, "autoBuffering":true}}' /> 
+        <h3>Snap! If you still can't view the video, you are out of luck!</h3> 
+      </object> 
+    </video>
+
+  <article>
+    <h2>Flash Video Example!</h2>
+    <h3>Check out the following video in flash. It's basically YouTube!</h3>
+  </article> 
+    <object width="560" height="320" type="application/x-shockwave-flash" data="flowplayer-3.2.7.swf" id="flashfallback"> 
+      <param name="player" value="flowplayer-3.2.7.swf" /> 
+      <param name="allowfullscreen" value="true" /> 
+      <param name="flashvars" value='config={"clip": {"url": "media/video.mp4", "autoPlay":false, "autoBuffering":true}}' /> 
+      <h3>Snap! If you still can't view the video, you are out of luck!</h3> 
+    </object> 
+
+  <article></article> 
+  </section>
+
+  <footer>
+    <small>&#169; Patrick Dugan <time datetime="2011-08-28">2011</time></small>
+      <figure>
+      <img src="images/HTML5.png" alt="">
+    </figure>
+  </footer>
+
+  <script type="text/javascript" src="js/flowplayer-3.2.6.min.js"></script>
+  </body>
+</html>

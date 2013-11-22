@@ -1,0 +1,104 @@
+﻿*{ 
+	margin: 0; 
+	padding: 0; 
+}*
+:focus, :active { 
+	outline: 0; 
+}
+body { 
+	font: .9em Georgia, "Times New Roman", Sans-Serif; 
+	background: #fff url(../images/bg.gif) repeat-x; 
+	color: #333; 
+	margin: 0 auto; 
+	width: 900px;
+}
+a { 
+	color: #A82A15; 
+	text-decoration: none; 
+}
+img { 
+	border: 0; 
+}
+h1 {  
+    	float: left; 
+	clear: both;
+	margin: 25px 0 45px; 
+	font-size: 3em; 
+	color: #fff; 
+}
+body h2 { 
+	color: #F31515;
+	font-size: 2em; 
+	font-weight: normal; 
+	margin: 10px 0 10px; 
+}
+section {
+    clear: both;
+}
+body h3 { 
+	font-size: 1em; 
+	font-weight: normal; 
+}
+body article {
+	float: left; 
+	width: 100%; 
+	margin: 0px 25px 25px;
+}
+footer { 
+	clear: both; 
+	padding: 15px; 
+	border-top: 1px solid #ccc;
+	text-align: center;
+
+}
+figure {
+	border-style:solid;
+	border-color:#fff;
+	border-width:10px;
+	clear: both;
+ 	margin-left: 10%;
+	margin-right: 10%;
+ 	text-align:center;
+}
+article aside {
+	font-style:italic;
+	padding:10px;
+}
+label {
+	width: 120px;
+	float: left;
+	height: 1.5em;
+    text-align:right;
+    padding-right:1.5em;
+}
+ 
+input,label {
+	clear: both;
+}
+ 
+input,textarea {
+	width: 200px;
+}
+input[type=range] {
+	width: 100px;
+	color: #c00;
+	font-family: fantasy;
+	font-size: 2em
+}
+input[type=submit] {
+	width: 60px;
+}
+p {
+	margin: 0;
+	padding: .5em 0
+}
+input[type="search"] 
+    {
+    -webkit-appearance: textfield;
+    }
+textarea {
+        width: 350px;
+        height: 120px;
+        padding: 5px;
+        font-family: Tahoma, sans-serif;
+}

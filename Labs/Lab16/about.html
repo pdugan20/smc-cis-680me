@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Week 16 Lab: Microdata</title>
+  
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Low-level HTML5 Template">
+    
+    <link rel="shortcut icon" href="images/htmlbadge.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+    <script type="text/javascript" src="js/modernizr-2.0.6.js"></script>
+  </head>
+  
+  <body> 
+  <header>
+    <hgroup>
+      <h1>Week 16 Lab: Microdata</h1>
+    </hgroup>
+  </header>
+  
+  <section>
+
+  <article itemscope itemtype="http://data-vocabulary.org/Person/">
+    <h2>About Me</h2>
+    <div class="profile_img"><img itemprop="photo" src="images/me.jpg"></div>
+    <strong>Name: </strong><span itemprop="name">Patrick Dugan</span>
+    <br><strong>Employer: </strong><span itemprop="affiliation">Google</span>
+    <br><strong>Role: </strong><span itemprop="role">Analyst</span>
+    <br><strong>Website: </strong><span><a itemprop="url" href="https://plus.google.com/104276451649083522843">Google+ Page</a></span>
+    <br><strong>Quick Bio: </strong><span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+  </article>
+  
+  <article itemscope itemtype="http://data-vocabulary.org/Address/">
+    <strong>Business Address:</strong>
+    <br><span itemprop="street-address">1600 Amphitheatre Parkway</span>
+    <br><span itemprop="locality">Mountain View</span>,
+    <span itemprop="region">CA</span>
+    <span itemprop="postal-code">94043</span>
+    <span itemprop="country-name">USA</span>
+    <br><strong>Telephone: </strong><span itemprop="tel">650-253-0000</span>
+    <br><strong>Business URL: </strong><a itemprop="url" href="http://www.google.com">www.google.com</a>
+  </article>
+  
+    <span itemscope itemtype="http://data-vocabulary.org/Geo/">
+    <meta itemprop="latitude" content="37.421144"/>
+    <meta itemprop="longitude" content="-122.085303"/>
+    </span>
+  </article>
+  
+  </section>
+
+  <footer>
+    <small>&#169; Patrick Dugan <time datetime="2011-08-28">2011</time></small>
+      <figure>
+      <img src="images/HTML5.png" alt="">
+    </figure>
+  </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  </body>
+</html>

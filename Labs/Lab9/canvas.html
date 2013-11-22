@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Week X Lab: Canvas Element</title>
+  
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Low-level HTML5 Template">
+    
+    <link rel="shortcut icon" href="images/htmlbadge.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/canvas.css">
+  </head>
+  
+  <body onload="boxy(); graphy(); html5_background(); texty(); radical_radial(); lovely_linear(); arrow_action();"> 
+  <header>
+    <hgroup>
+      <h1>Week X: Canvas Element</h1>
+    </hgroup>
+  </header>
+  
+  <section>
+
+  <article>
+    <h2>Rectangle Canvas Example!</h2>
+    <h3>Below are two neat looking squares! The small one is green, the large one is red.</h3>
+    <br>
+    <canvas id="boxy" width="850" height="300"></canvas>
+  </article>
+
+  <article>
+    <h2>Graph Paper Canvas Example!</h2>
+    <h3>Below is a canvas made to look like graph paper!</h3>
+    <br>
+    <canvas id="graphy" width="850" height="300"></canvas>
+  </article>
+
+  <article>
+    <h2>Image Background Fill Example!</h2>
+    <h3>Below is a canvas that uses an HTML5 Logo Image as it's filled background!</h3>
+    <br>
+    <canvas id="html5_background" width="850" height="300"></canvas>
+  </article>
+
+  <article>
+    <h2>Text Printing Example!</h2>
+    <h3>Below is a canvas that prints and repeats text!</h3>
+    <br>
+    <canvas id="texty" width="850" height="300"></canvas>
+  </article>
+
+  <article>
+    <h2>Radial Gradient Example!</h2>
+    <h3>Below is a radial gradient example!</h3>
+    <br>
+    <canvas id="radical_radial" width="850" height="300"></canvas>
+  </article>
+
+  <article>
+    <h2>Linear Gradient Example!</h2>
+    <h3>Below is a linear gradient example in all of its glory!</h3>
+    <br>
+    <canvas id="lovely_linear" width="850" height="300"></canvas>
+  </article>
+
+  <article>
+    <h2>Arrow Example!</h2>
+    <h3>Below is an example of a custom drawn arrow!</h3>
+    <br>
+    <canvas id="arrow_action" width="850" height="300"></canvas>
+  </article>
+  
+  </section>
+
+  <footer>
+    <small>&#169; Patrick Dugan <time datetime="2011-08-28">2011</time></small>
+      <figure>
+      <img src="images/HTML5.png" alt="">
+    </figure>
+  </footer>
+
+    <script type="text/javascript">
+    //Draw some boxes.
+    	function boxy() {
+    	  var canvas = document.getElementById('boxy');  
+      if (canvas.getContext){
+        //box 1  
+        var ctx = canvas.getContext('2d');  		
+	    ctx.fillStyle = 'rgb(0, 255, 0)'; 
+	    ctx.fillRect(10, 20, 50, 50); // creates a solid square 
+	    ctx.strokeStyle = 'rgb(0, 182, 0)'; 
+	    ctx.lineWidth = 5; 
+	    ctx.strokeRect(9, 19, 52, 52); // draws an outline
+	    //box 2  		
+	    ctx.fillStyle = '#FF0000'; 
+	    ctx.fillRect(100, 100, 75, 75); // creates a solid square 
+	    ctx.strokeStyle = '#000000'; 
+	    ctx.lineWidth = 10; 
+	    ctx.strokeRect(99, 99, 77, 77); // draws an outline
+		}
+      }
+      //Draw some graph paper looking canvas  
+      function graphy() {
+    	    var canvas = document.getElementById('graphy');  
+        if (canvas.getContext){
+          var ctx = canvas.getContext('2d');  
+		  for (var x = 0.5; x< 850; x += 15) {
+		    ctx.moveTo(x,0);
+			ctx.lineTo(x,850);
+		  }
+		  for (var y = 0.5; y< 300; y+=15) {
+		    ctx.moveTo(0,y);
+			ctx.lineTo(850,y);
+		  }
+		  ctx.strokeStyle = "#808080";
+		  ctx.stroke();
+		}
+      }
+      //Use an image as the background for the canvas
+      function html5_background() {
+    	    var canvas = document.getElementById('html5_background'),
+    	    img = document.createElement('img'),
+    	    ctx = canvas.getContext('2d');  
+        img.onload = function () {
+          ctx.fillStyle = ctx.createPattern(this, 'repeat'); 
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }; 
+        img.src = 'images/html5_background.jpg';  
+      }
+      //Draw out some text
+      function texty() {
+    	    var canvas = document.getElementById('texty');  
+        if (canvas.getContext){  
+          var ctx = canvas.getContext('2d');  
+		  ctx.font = "italic 12px sans-serif";
+		  ctx.fillStyle = "#000000";
+		  ctx.textBaseline = "top";
+		  var txt = "Wowza, the Canvas element rocks!";
+		  var x=1;
+		  var y=1;
+		  while(y<=300) {
+		    while(x<=850) {
+			  ctx.fillText(txt,x,y);
+			  x += 250 ;
+			}
+			x = 1;
+			y+= 18;
+  		  }
+  		}  
+      }
+      //Make a radial gradient inside of a shape  
+      function radical_radial() {
+    	    var canvas = document.getElementById('radical_radial');  
+        if (canvas.getContext){
+          var ctx = canvas.getContext('2d');  
+		  var radgrad = ctx.createRadialGradient(50,60,10,75,80,70);
+          radgrad.addColorStop(0, '#A7D30C');
+          radgrad.addColorStop(0.9, '#019F62');
+          radgrad.addColorStop(1, '#000066');
+          ctx.fillStyle = radgrad;
+          ctx.fillRect(0,0,850,300)
+          ctx.font = "14px sans-serif";
+		  ctx.fillStyle = "white";
+		  ctx.fillText("This is a green circle, with a cool radiant that I modified from a firefox demo.",10,290);
+		}
+      }  
+      //Make a linear gradient inside of a shape  
+      function lovely_linear() {
+        var canvas = document.getElementById('lovely_linear'); 
+        ctx = canvas.getContext('2d'), 
+        gradient = ctx.createLinearGradient(0, 50, 0, canvas.height);
+        gradient.addColorStop(0, '#FFFFFF'); 
+        gradient.addColorStop(1, '#000000'); 
+        ctx.fillStyle = gradient; 
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.font = "14px sans-serif";
+		ctx.fillStyle = "white";
+		ctx.fillText("Now that's what I call a linear gradient!",10,290);		
+      }       	
+      //Draw an arrow
+      function arrow_action() {
+        var canvas = document.getElementById('arrow_action'); 
+        ctx = canvas.getContext('2d'), 
+        ctx.beginPath();
+        ctx.moveTo(30,75);
+        ctx.lineTo(175,75);
+        ctx.lineTo(175,40);
+        ctx.lineTo(230,100);
+        ctx.lineTo(175,150);
+        ctx.lineTo(175,115);
+        ctx.lineTo(30,115);
+        ctx.closePath();
+        ctx.stroke();		
+      }    
+    </script>  
+  </body>
+</html>

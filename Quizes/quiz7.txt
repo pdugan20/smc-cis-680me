@@ -1,0 +1,27 @@
+1. Which of the following are CSS pseudo-classes?
+ANSWER:
+::nth-child
+::selection
+::empty
+::before
+
+2. CSS can count using counters. Assuming that we have created a counter named "chapter", which statement below would increase the counter by one?
+ANSWER:
+counter-increment: chapter;
+
+3. Assuming that we have a CSS counter named "section", which of the following would display the content of the counter before a paragraph?
+ANSWER:
+p::before {counter-increment(section); content:counter(section)}
+
+4. What is the effect of a CSS Reset file?
+ANSWER:
+A CSS reset removes browsers default styles --- paddings, margins, and font sizes.
+
+5. CSS3 allows elements to have multiple background images.
+ANSWER:
+TRUE
+
+
+
+
+	

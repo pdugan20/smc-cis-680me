@@ -1,0 +1,42 @@
+@page {
+  size: 7in 9.25in;
+  margin: 27mm 16mm 27mm 16mm;
+  counter-increment: page;
+}
+div.chapter, div.appendix {
+  page-break-after: always;
+}
+div.titlepage {
+  page: blank;
+}
+@page :left {
+  @top-left {
+    content: "Cascading Style Sheets";
+  }
+}
+@page blank :left {
+  @top-left {
+    content: normal;
+  }
+}
+h1 {
+  string-set: header content();
+}
+@page :right {
+  @top-right {
+    content: string(header, first); 
+  }
+}
+@page :left {
+  @bottom-left {
+    content: counter(page);
+  }
+}
+@page front-matter :left {
+  @bottom-left {
+    content: counter(page, lower-roman);
+  }
+}
+ul.toc a::after {
+  content: leader('.') target-counter(attr(href), page);
+}

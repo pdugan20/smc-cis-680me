@@ -1,0 +1,29 @@
+1. A video codec is an algorithm by which a video stream is encoded. Which of the 4 codecs below is not a video codec?
+ANSWER:
+MP3
+
+2. We can use CSS media queries such as media="(min-device-width: 800px)" to deliver low-res video to mobile devices.
+ANSWER:
+TRUE
+
+3. 
+Considering the following rules, 
+There is no single combination of containers and codecs that works in all HTML5 browsers. This is not likely to change in the near future.
+To make your video watchable across all of these devices and platforms, you’re going to need to encode your video more than once.
+Which of the following steps will be in your video workflow?
+ANSWER:
+a. Make one version that uses WebM (VP8 + Vorbis).  	
+b. Make another version that uses Theora video and Vorbis audio in an Ogg container.  	
+c. Link to all three video files from a single <video> element, and fall back to a Flash-based video player.  	
+d. Make another version that uses H.264 baseline video and AAC “low complexity” audio in an MP4 container.
+
+
+4. Considering copyrighted material and DRM (digital rights management), will HTML5 replace third-party plugins such as Flash and Realplayer? True or false?
+ANSWER:
+FALSE
+
+
+
+
+
+	

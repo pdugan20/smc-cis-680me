@@ -1,0 +1,20 @@
+1. Which of the following words below are the names of attributes used to embed microdata in HTML5?
+ANSWER:
+itemscope, itemprop, itemtype
+
+2. Match the elements with the source of the microdata property values associated with them
+ANSWER:
+<meta> content
+<a> href
+<object> data
+<time> datetime
+<audio> src
+<all other tags not listed above> text
+
+3. Assume that your are embedding microdata for a person using the vocabulary available at http://data-vocabulary.org/Person.Which of the following are properties in that vocabulary?
+ANSWER:
+role, address, url, nickname, name
+
+4. Using the vocabulary available http://data-vocabulary.org/Organization, what the property used to give an organization's latitude and longitude?
+ANSWER:
+geo

@@ -1,0 +1,32 @@
+1. Some of the form input types below belong to both HTML 4 and HTML5. Match the elements that are specific to HTML5 and those that are common to both HTML 4 and HTML5.
+ANSWER:
+color html5
+number html5
+email html5
+url html5
+text both
+texture both
+datetime html5
+submit both
+password both
+
+2. Answer True or False: All HTML5 form input element MUST be inside the form tags, unless the input element has a "form" attribute that associates it with a specific form.
+ANSWER:
+True
+
+3. The HTML5 input element attribute names "pattern" uses what dialect of regular expressions?
+ANSWER:
+Javascript
+
+4. What does WAI-ARIA stand for?
+ANSWER:
+Web Accessibility Initiative’s Accessible Rich Internet Applications
+
+5. Which of the following attributes could you use to instruct an <ol> list to begin at 10 rather than at 1 (one)?
+ANSWER:
+start=10
+START="10"
+
+
+
+	

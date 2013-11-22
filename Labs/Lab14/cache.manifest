@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# version_1.0
+
+# Explicitly cached entries
+work_offline.html
+canvas.html
+css/canvas.css
+css/offline.css
+css/html5reset.css
+
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+/ /also_work_offline.html
+
+# All other resources (e.g. sites) require the user to be online. 
+NETWORK:
+*
+
+# Additional resources to cache
+CACHE:
+images/bg.gif
+images/html5_background.jpg
+images/HTML5.png
+images/htmlbadge.ico

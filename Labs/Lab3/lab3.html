@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en"> <!-- added class="no-js" -->
+  <head>
+    <meta charset="utf-8">
+    <title>Car Demo Form Validation</title>
+    <meta name="author" content="Patrick Dugan">
+    <meta name="description" content="Low-level HTML5 Template">
+    <link rel="shortcut icon" href="images/html5badge.ico"/>
+    <link rel="stylesheet" href="css/style_lab3.css">
+    <!-- All JavaScript at the bottom, except for html5whiv which 
+         enables HTML5 elements in IE 6, 7, and 8 -->   
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body> 
+  <header>
+    <hgroup>
+      <h1>Form Validation: Car Demo</h1>
+    </hgroup>
+  </header>
+  
+  <section>
+  
+<h2>Buyer Information</h2>
+
+<form action="http://csmcis2.csmcis.com/~coolj/cgi-bin/html5_form.py" id="car_form"> 
+<p> 
+<label for="f_name">First name</label>
+<input type="text" name="f_name" id="f_name" autofocus required placeholder="First Name" title="Please enter your first name"> 
+<p> 
+<label for="l_name">Last name</label>
+<input type="text" name="l_name" id="l_name" required placeholder="Last Name" title="Please enter your last name"> 
+<p> 
+<label for="buyer_phone">Cellphone</label>
+<input type="tel" name="buyer_phone" id="buyer_phone" required placeholder="555-555-5555" title="Please enter your cellphone number"></p> 
+<p> 
+<label for="valid_email">E-mail</label>
+<input type="email" name="valid_email" id="valid_email" required placeholder="somebody@domain.com" title="Please enter your email address"> 
+
+<h2>Dealership Visit Info</h2>
+
+<p> 
+<label for="dealer_search">Search</label>
+<input type="search" name="dealer_search" id="dealer_search" placeholder="Local Jeep Dealer" title="Search for your local car dealer"></p> 
+<p> 
+<label for="car_maker">Car Manufactuer</label>
+<input type="text" list="manufacturers" name="car_maker" id="car_maker" placeholder="Jeep" title="Please choose a car manufacturer from the list"></p> 
+<datalist id="manufacturers"> 
+<option value="Jeep"> 
+<option value="Ford"> 
+<option value="Chevy"> 
+<option value="Saturn"> 
+<option value="Pontiac"> 
+</datalist> 
+<p> 
+<label for="dealer_url">URL</label>
+<input type="url" name="dealer_url" id="dealer_url" placeholder="www.jeep.com" title="Please enter the URL of your favorite car manufacturer"> 
+<p> 
+<label for="visit_date">Dealership Visit</label>
+<input type="date" name="" value='2011-09-03' id="visit_date" min="2011-09-03" title="Please select a day you would like to visit the dealer"></p>
+<p> 
+<label for="visit_time">Visit Time</label>
+<input type="time" name="visit_time" id="visit_time" value="12:00" title="Please select the time you would like to visit"></p> 
+
+<h2>Car Delivery Preferences</h2>
+
+<p> 
+<label for="month_delv">Month</label>
+<input type="month" name="month_delv" id="month_delv" value="2011-09" min="2011-09" max="2011-10" title="Please select the month you would like your car delivered"></p> 
+<p> 
+<label for="week_delv">Week</label>
+<input type="week" name="week_delv" id="week_delv" value="2011-W34" min="2011-W34" max="2011-W36" title="Please select the week you would like your car delivered"></p> 
+<p> 
+<label for="date_time">Dropoff Time</label>
+<input type="datetime" name="date_time" id="date_time" value="2011-09-04T12:00:00Z" title="Please select the time you would like your car dropped off"></p> 
+<p> 
+<label for="date_time_local">Dropoff Time (L)</label>
+<input type="datetime-local" name="date_time_local" id="date_time_local" value="2011-09-04T12:00:00" title="Please select the time you would like your car dropped off locally"></p> 
+<p> 
+
+<h2>Car Customizations</h2>
+
+<p>
+<label for="door_number"># of Doors</label>
+<input type="number" name="door_number" id="door_number" value="2" max="4" min="2" step="2" title="Please select the number of doors you prefer"></p> 
+<p> 
+<label for="car_color">Color</label>
+<input type="color" name="car_color" id="car_color" value="#FFFFFF" title="Please select your favorite color!"></p> 
+<p>
+<label for="cylinders">Cylinders</label>
+<small> 4 <input type="range" name="cylinders" id="cylinders" value="6" min="4" max="8" step="2" title="Please select a cylinder range between 4 and 8"> 8 </small></p> 
+
+<h2>Feedback</h2>
+
+<p> 
+<label for="buyer_feedback">Comments</label>
+<textarea name="buyer_feedback" id="buyer_feedback" placeholder="How easy was it to fill out this form?" title="Please provide feedback on how hard/easy it was to complete this form"></textarea></p> 
+
+<p> 
+<input type="submit" name="submit" value="Submit" id="submit"></p> 
+</form> 
+
+<p>Form spacing CSS used from Proffesor Putnam's Example Form</p> 
+
+</section>
+
+  <footer>
+    <small>&#169; Patrick Dugan <time datetime="2011-08-28">2011</time></small>
+  </footer>
+
+  <!-- Javascripts, except for html5shiv, should be at the end of your page. -->
+  <script>
+  </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+1. HTML 5 is not well supported by IE 6, 7, and 8. This means that we can ignore those browsers when we develop our code. True, or False?
+ANSWER:
+False
+
+2. The DOCTYPE in HTML5 is quite simple and gives the browser no specific instructions. Why do we need a DOCTYPE?
+ANSWER:
+The DOCTYPE is needed for some browsers to trigger the standards mode.  
+
+3. HTML5 has a relaxed syntax. However, there are rules. Which of the following statements about HTML5 is not true?
+ANSWER:
+Attributes must be quoted, the same as with XHTML.  	
+
+4. Match the file type on the left with the permissions on the right. Assume that we're talking about a web servers directories and files.
+ANSWER:
+public_directories 711
+public_html 711
+public files 644
+private directories 700
+CGI scripts 700
+about.html 644
+index.html 644
+
+5. According to HTML5 Readiness, which browser is currently most ready for HTML5?
+ANSWER:
+Chrome
+	

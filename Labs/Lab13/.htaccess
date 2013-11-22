@@ -1,0 +1,5 @@
+# Add the media type for the manifest file
+AddType text/cache-manifest .manifest
+# Make sure the browser does not cache the manifest file
+ExpiresActive On 
+ExpiresDefault "access" 

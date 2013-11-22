@@ -1,0 +1,32 @@
+1. What does the "poster" attribute do?
+ANSWER:
+The poster attribute points to an image that the browser will use while the video is downloading
+
+2. Which of the following MIME types are for video?
+ANSWER:
+a. video/ogg  	
+b. video/webm  	
+c. video/mp4  	
+d. video/mpeg  
+
+3. Match the extenstion with the correct media type.
+ANSWER:
+.ogg = audio/ogg
+.webm = video/webm
+.html = text/html
+.ogv = video/ogg
+.txt = text/plain
+.mp3 = audio/mpeg
+.mp4 = video/mp4
+.css = text/css
+
+4. Match the codecs with the media types.
+ANSWER:
+video/webm = vp8, vorbis
+video/mp4 = avc1.42E01E, mp4a.40.2
+video/ogv = theroa, vorbis
+
+5. Which of the following items is not a video container:
+ANSWER:
+H.264
+

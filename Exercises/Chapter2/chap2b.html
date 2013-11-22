@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<script> document.createElement(‘header’); document.createElement(‘nav’); document.createElement(‘article’); document.createElement(‘footer’); </script>
+<style>
+header, nav, footer, article {display:block;} 
+nav {
+  float:left; width:20%;
+} 
+article {
+  float:right; width:79%;
+} 
+footer {
+  clear:both;
+}
+header {
+  display:block; color:green; text-align:left;
+}
+article header {
+  color:blue;
+}
+article time {
+  color:orange;
+}
+article article {
+  float:left; text-indent:25px;
+}
+</style>
+<title>My Interesting Life</title>
+</head>
+<header>
+  <h1>My Interesting Life</h1>
+</header>
+<nav>
+  <h2>Menu</h2>
+  <ul>
+    <li><a href="last-week.html">Last Week</a></li>
+    <li><a href="archive.html">Archives</a></li>
+  </ul>
+</nav>
+<article> 
+  <header>
+    <h2>Memoirs of a Parisian lion-tamer</h2> 
+    <time datetime=2010-01-24 pubdate>January 24th, 2010</time>
+  </header> 
+  <p>Claude Bottom’s poignant autobiography is this ¬summer’s must-read.</p>
+  <p><blockquote> Thou look’st like antichrist, in that lewd hat. 
+  <footer>Ananias 
+  <cite>Scene 4.3, <a href="http://www.gutenberg.org/files/4081/4081-h/4081-h.htm">The Alchemist</a>
+  </cite> (Ben Jonson)
+  </footer>
+  </blockquote> 
+  <footer>
+    Posted in <a href="/?cat=3">Books category</a>. <a href="/?p=34#respond">No Comments</a> 
+  </footer>
+</article>
+
+<!-- begin blogpost -->
+<article> 
+<header>
+<h1>Subject Goes Here</h1>
+<time datetime=2010-01-24 pubdate>January 24th, 2010</time>
+</header>
+<br>The conent of the article or post would go here
+<footer>Posted in <a href="/?cat=3">Books category</a>.</footer>
+<article> 
+<!-- comment --> 
+<header>
+<br>Comment from <a href="http://remysharp.com">Remy Sharp</a> at <time datetime="2010-05-01T08:45Z">8.45 on 1 May 2010</time>
+</header> 
+Test comment number 1
+</article> 
+<!-- end comment -->
+<article> 
+<!-- comment --> 
+<header>
+<br>Comment from <a href="http://splintered.co.uk">Patrick Lauke</a> at <time datetime="2010-05-02T10:45Z">10.45 on 2 May 2010</time>
+</header>
+Another test comment 
+</article> 
+<!-- end comment -->
+</article> 
+<!-- end blogpost -->
+
+<footer>
+  <p><small>Copyright and other info here</small></p>
+</footer>
+</html>
